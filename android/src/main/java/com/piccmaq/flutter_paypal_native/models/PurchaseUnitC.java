@@ -14,6 +14,12 @@ public class PurchaseUnitC {
     @SerializedName("referenceId")
     @Expose
     private String referenceId;
+    @SerializedName("payeeEmailAddress")
+    @Expose
+    private String payeeEmailAddress;
+    @SerializedName("payeeMerchantId")
+    @Expose
+    private String payeeMerchantId;
 
 
     public String getPrice() {
@@ -38,5 +44,21 @@ public class PurchaseUnitC {
 
     public void setCurrency(String currency) {
         this.currency = currency;
+    }
+
+    public String getPayeeEmailAddress() {
+        return payeeEmailAddress;
+    }
+
+    public void setPayeeEmailAddress(String payeeEmailAddress) {
+        this.payeeEmailAddress = payeeEmailAddress;
+    }
+
+    public String getPayeeMerchantId() {
+        return payeeMerchantId;
+    }
+
+    public void setPayeeMerchantId(String payeeMerchantId) {
+        this.payeeMerchantId = payeeMerchantId;
     }
 }

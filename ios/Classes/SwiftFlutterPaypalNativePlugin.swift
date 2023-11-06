@@ -89,7 +89,8 @@ public class SwiftFlutterPaypalNativePlugin: NSObject, FlutterPlugin {
 
             let purchaseUnit = PayPalCheckout.PurchaseUnit(
                     amount: amount,
-                    referenceId: customUnit.referenceId
+                    referenceId: customUnit.referenceId,
+                    payee: PurchaseUnit.Payee(emailAddress: customUnit.payeeEmailAddress, merchantId: customUnit.payeeMerchantId)
             )
 
             purchaseUnits.append(purchaseUnit)

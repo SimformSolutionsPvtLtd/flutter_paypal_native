@@ -6,6 +6,8 @@ class FPayPalPurchaseUnit {
   FPayPalCurrencyCode currencyCode;
   double amount;
   String? referenceId;
+  String? payeeEmailAddress;
+  String? payeeMerchantId;
 
   FPayPalPurchaseUnit({
     this.currencyCode = FPayPalCurrencyCode.usd,
@@ -14,6 +16,8 @@ class FPayPalPurchaseUnit {
     ///please provide reference id,
     ///if ordering more than 2 products
     this.referenceId,
+    this.payeeEmailAddress,
+    this.payeeMerchantId,
   });
 
   ///get amount in currency format 10.00, 50000.00
@@ -27,6 +31,8 @@ class FPayPalPurchaseUnit {
       //try to auto generate string
       // ?? StrHelper.getRandomString(16)
       "referenceId": referenceId,
+      "payeeEmailAddress": payeeEmailAddress,
+      "payeeMerchantId": payeeMerchantId,
       "price": amountStr,
       "currency": FPayPalCurrencyCodeHelper.convertFromEnumToString(
         currencyCode,

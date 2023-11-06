@@ -15,6 +15,7 @@ import com.paypal.checkout.createorder.UserAction;
 import com.paypal.checkout.order.Amount;
 import com.paypal.checkout.order.AppContext;
 import com.paypal.checkout.order.OrderRequest;
+import com.paypal.checkout.order.Payee;
 import com.paypal.checkout.order.PurchaseUnit;
 import com.piccmaq.flutter_paypal_native.models.CheckoutConfigStore;
 import com.piccmaq.flutter_paypal_native.models.CurrencyCodeHelper;
@@ -172,6 +173,7 @@ public class FlutterPaypalNativePlugin extends FlutterRegistrarResponder
                                                             .value(purchaseUnit.getPrice())
                                                             .build())
                                             .referenceId(purchaseUnit.getReferenceID())
+                                            .payee(new Payee(purchaseUnit.getPayeeEmailAddress(), purchaseUnit.getPayeeMerchantId()))
                                             .build());
                         }
                         OrderRequest order = new OrderRequest(

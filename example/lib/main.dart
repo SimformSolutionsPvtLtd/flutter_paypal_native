@@ -105,6 +105,10 @@ class _MyAppState extends State<MyApp> {
 
                         ///please use your own algorithm for referenceId. Maybe ProductID?
                         referenceId: FPayPalStrHelper.getRandomString(16),
+
+                        payeeEmailAddress: 'PAYEE_EMAIL',
+
+                        payeeMerchantId: 'PAYEE_MERCHANT_ID'
                       ),
                     );
                   }

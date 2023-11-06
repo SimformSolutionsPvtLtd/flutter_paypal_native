@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  flutter_paypal_native: d6494730ed3d20acbd2192b5baaf485fafc944bc
+  flutter_paypal_native: ca6fb0bd644593c7489008b87b27ec8a983e587b
   PayPalCheckout: ec442f9026c4ec6eee58f768b3cfd81c0ff569bf
 
 PODFILE CHECKSUM: 0bf79badf7d842c8c15b61aef7f2fdc9d1829ea6
