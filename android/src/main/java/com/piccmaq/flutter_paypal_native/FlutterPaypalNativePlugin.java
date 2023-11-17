@@ -180,6 +180,7 @@ public class FlutterPaypalNativePlugin extends FlutterRegistrarResponder
                                 OrderIntent.CAPTURE,
                                 new AppContext.Builder()
                                         .userAction(userAction)
+                                        .landingPage("GUEST_CHECKOUT")
                                         .build(),
                                 purchaseUnits);
                         createOrderActions.create(order, orderId -> {
